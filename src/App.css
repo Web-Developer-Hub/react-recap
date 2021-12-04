@@ -1,3 +1,14 @@
 h1, h2, h3, h4, h5, h6{
     font-weight: 400;
 }
+
+.mainDiv{
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.childDiv img{
+    width: 300px;
+}
