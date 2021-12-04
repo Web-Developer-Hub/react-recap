@@ -252,6 +252,7 @@ function App() {
       <div className="App">
         {data.map((product) => <Products data={product}></Products>)}
       </div>
+      <div style={{ textAlign: 'center', marginTop: '30px' }}>Copyright © 2021 Habibor-Rahaman.com</div>
     </div>
   );
 }
