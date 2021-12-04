@@ -245,8 +245,13 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      {data.map((product) => <Products data={product}></Products>)}
+    <div>
+      <div className="inputField">
+        <input className="input" type="text" /> <button>Search Now</button>
+      </div>
+      <div className="App">
+        {data.map((product) => <Products data={product}></Products>)}
+      </div>
     </div>
   );
 }
@@ -259,11 +264,11 @@ function Products(props) {
     <div className="mainDiv">
       <div className="childDiv">
         <img src={image} alt="product" />
-        <p>id: {id}</p>
-        <p>Title: {title}</p>
-        <p>Price: {price}</p>
-        <p>Category: {category}</p>
-        <p>Description: {description}</p>
+        <p>id: {id ? id : 'Empty Data'}</p>
+        <p>Title: {title ? title : 'Empty Data'}</p>
+        <p>Price: {price ? price : 'Empty Data'}</p>
+        <p>Category: {category ? category : 'Empty Data'}</p>
+        <p>Description: {description.slice(0, 200) ? description.slice(0, 200) : 'Empty Data'}</p>
       </div>
     </div>
   );
