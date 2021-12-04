@@ -245,7 +245,7 @@ function App() {
   ];
 
   return (
-    <div>
+    <div className="div">
       <div className="inputField">
         <input className="input" type="text" /> <button>Search Now</button>
       </div>
